@@ -65,8 +65,7 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             val query: String = etQuery.text.toString()
             if (query.isEmpty()){
-//                Toast.makeText(this@MainActivity, "keyword tidak boleh kosong", Toast.LENGTH_SHORT).show()
-                binding.tvNoData.visibility = View.VISIBLE
+                Toast.makeText(this@MainActivity, "keyword tidak boleh kosong", Toast.LENGTH_SHORT).show()
                 return loadingData(true)
             } else {
                 viewModel.setDataSearch(query)
