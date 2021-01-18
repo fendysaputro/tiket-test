@@ -59,8 +59,6 @@ class MainActivity : AppCompatActivity() {
                 adapter.setList(it)
                 loadingData(false)
             } else {
-                binding.rvUser.visibility = View.GONE
-                binding.frLayout.visibility = View.GONE
                 binding.tvNoData.visibility = View.VISIBLE
                 Toast.makeText(this@MainActivity, "data tidak ditemukan", Toast.LENGTH_SHORT).show()
             }
