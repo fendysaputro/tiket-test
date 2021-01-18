@@ -12,6 +12,6 @@ import retrofit2.http.Query
  */
 interface ApiInterface {
     @GET("search/users")
-    @Headers("Authorization: token b1bd29594b9c4b80c7aa87b0011e7d73570c221a")
+    @Headers("Authorization: token b47f3be8589fa74c31deab197306ed8c6eef2808")
     fun getSearchUser (@Query("q") query: String): Call<UserResponse>
 }
