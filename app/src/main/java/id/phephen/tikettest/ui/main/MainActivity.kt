@@ -20,17 +20,13 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewModel: UserViewModel
-    private lateinit var progressBar: ProgressBar
-    private lateinit var rvUser: RecyclerView
-    private lateinit var btnSearch: ImageView
-    private lateinit var etQuery: TextInputEditText
-    private lateinit var tvNoData: TextView
     private lateinit var adapter: UserAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         adapter = UserAdapter()
         adapter.notifyDataSetChanged()
